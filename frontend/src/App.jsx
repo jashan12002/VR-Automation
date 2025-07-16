@@ -44,7 +44,7 @@ function App() {
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
-          <span className="ml-4 text-sm text-gray-400 hidden md:inline">Auto-refreshes every 30 minutes</span>
+         
         </div>
         {loading ? (
           <div className="text-center text-lg py-8 animate-pulse">Loading...</div>
@@ -54,9 +54,7 @@ function App() {
           <CryptoTable coins={filteredCoins} />
         )}
       </div>
-      <footer className="mt-8 text-gray-500 text-xs text-center">
-        Powered by CoinGecko API | VR Automations Project
-      </footer>
+      
     </div>
   );
 }
