@@ -11,6 +11,10 @@ app.use(express.json());
 
 app.use('/api', routes);
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Crypto Tracker API');
+});
+
 require('./jobs/historyCron');
 
 
