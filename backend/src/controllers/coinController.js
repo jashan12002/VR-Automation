@@ -30,6 +30,6 @@ exports.getTopCoins = async (req, res) => {
       lastUpdated: coin.last_updated
     })));
   } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch coins' });
+    res.status(500).json({ error: 'Failed to fetch coins', details: err });
   }
 };
