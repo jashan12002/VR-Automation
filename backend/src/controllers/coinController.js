@@ -23,6 +23,7 @@ exports.getTopCoins = async (req, res) => {
     res.json(coins.map(coin => ({
       coinId: coin.id,
       name: coin.name,
+      image: coin.image,
       symbol: coin.symbol,
       price: coin.current_price,
       marketCap: coin.market_cap,
